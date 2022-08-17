@@ -1,85 +1,116 @@
 *{
     margin: 0%;
-    padding-left: 0%;
+    padding: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav .btn{
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+nav .btn:hover{
+    background-color: transparent;
+    border: solid black 2px;
+    color: black;
+}
+
 .hero{
+    width: 100%;
+    height: 80vh;
+    background: url(/img/Backg.jpg);
+    background-size: cover;
+    background: linear-gradient rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+}
+
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px 100px;
 }
 
 .logo{
-    margin-left: 40px;
-    font-weight: 900;
-    font-size: 30px;
-    cursor: pointer;
+    max-height: 100px;
 }
 
-.logo span{
-    color: aqua;
-}
-
-.nav-bar a{
-    text-decoration: none;
-    padding: 20px;
-    color: black;
-}
-
-.nav-bar a:hover{
-    color: lightgray;
-}
-
-.btn a{
-    text-decoration: none;
-    margin-right: 40px;
-    color: black;
-    background-color: aqua;
-    color: white;
-    padding: 15px;
-    border-radius: 20px;
-}
-
-.btn a:hover{
-    color: aqua;
-    background-color: transparent;
-    border: solid aqua;
-}
-
-.info{
-    max-width: 50%;
-    margin-left: 7%;
-    margin-top: 15%;
+nav ul li{
+    list-style: none;
     display: inline-block;
+    margin: 40px;
+}
+
+.down{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    bottom: 0%;
     position: absolute;
 }
 
-.info h1{
-    font-size: 60px;
+.me{
+    width: 450px;
+    float: right;
+    margin-right: 10%;
+}
+.content{
+    position:absolute;
+    margin-top: 5%;
+    margin-left: 80px;
+    color: white;
 }
 
-.info h1 span{
-    color: lightblue;
+.content h1{
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 60%;
 }
 
-.info h1 span:hover{
-    color: aqua;
+.content span{
+    font-size: 100px;
+    letter-spacing: 5px;
+}
+
+.content .hv:hover{
+    color: black;
     cursor: pointer;
 }
 
-.info p{
+.content p{
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-weight: 500;
     letter-spacing: 2px;
-    color: aqua;
+    font-size: 20px;
+    color: black;
+}
+.down-text{
+    color: white;
+    text-align: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 25px;
 }
 
-.img-first{
-    display: inline-block;
-margin-left: 50%;
-}
-
-.img-first img{
-    width: 568px;
+.down .hireme a{
+    color: green;
+    font-weight: 900;
+    cursor: pointer;
 }
